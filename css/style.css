@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+    font-family: 'indei Flower', cursive;
+}
+*{
+    scroll-behavior: smooth;
+}
+header {
+    height: 100vh;
+    background: url('../images/header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* Start Navbar */
+ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+ul li{
+    flex: 1 0 auto;
+    text-align: center;
+    list-style-type: none;
+    background-color: #CED0CE;
+}
+ul li a{
+    text-decoration: none !important;
+    display: block;
+    padding: 5px;
+    color: #2d3142;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+li a:hover{
+    color: whitesmoke;
+    background-color: #f15025;
+}
+/* End Navbar */
+
+/* Start Banner */
+.banner-center {
+    height: 100vh;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.banner-underline {
+    width: 300px;
+    border: 3px solid #f15025;
+    margin: 0px auto 40px auto;
+}
+
+.btn-holder {
+    display: flex;
+    justify-content: center;
+}
+
+.white-btn,
+.navy-btn {
+    color: whitesmoke;
+    font-size: 30px;
+    margin: 0px 30px;
+    text-decoration: none !important;
+    border-radius: 20px;
+    padding: 10px 30px;
+    transition: all 0.3s ease;
+
+}
+
+.banner-center h1 {
+    font-size: 140px;
+}
+
+.navy-btn {
+    border: 2px solid #353531;
+    background-color: #2d3142;
+}
+
+.white-btn {
+
+    border: 2px solid whitesmoke;
+}
+
+.white-btn:hover,
+.white-btn:focus {
+    color: #f15025;
+    background: whitesmoke;
+}
+
+.navy-btn:hover,
+.navy-btn:focus {
+    border: 2px solid whitesmoke;
+    color: #f15025;
+    background: whitesmoke;
+}
+
+/* End Banner */
+
+/* Start Qualities */
+.title {
+    margin: 20px 0px 40px 0px;
+}
+
+.title-underline {
+    width: 150px;
+    border: 2px solid #f15025;
+    margin: 0px auto 10px auto;
+}
+
+#quality-section {
+    background-color: #ced0ce;
+    padding: 40px;
+}
+
+#quality-section .fa {
+    font-size: 60px;
+    color: #f15025;
+    margin-bottom: 10px;
+}
+
+#quality-section h2 {
+    margin-bottom: 20px;
+}
+
+/* End Qualities */
+
+/* Start Projects */
+#project-section {
+    padding-top: 20px;
+    background-color: #2d3142;
+    color: whitesmoke;
+}
+
+.left {
+    padding-left: 0;
+}
+
+.right {
+    padding-right: 0;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* End Projects */
+
+/* Start Contact */
+#contact-section {
+    padding: 40px;
+    background-color: whitesmoke;
+}
+
+#contact-section .form-control {
+    border-radius: 0px;
+}
+
+#contact-section button {
+    background-color: #353531;
+    font-size: 24px;
+    color: #f15025;
+    margin-bottom: 20px;
+}
+
+#contact-section button:hover {
+    background-color: #ced0ce;
+}
+
+/* End Contact */
+
+/* Start Footer */
+#footer-section {
+    padding: 40px;
+    color: whitesmoke;
+    background-color: #353531;
+    overflow: hidden;
+}
+
+#footer-section h4 {
+    margin-bottom: 20px;
+}
+
+#footer-section p {
+    font-size: 20px;
+}
+
+#footer-section .websites a {
+    text-decoration: none !important;
+    color: #f15025;
+    font-size: 20px;
+}
+
+#footer-section .websites a:hover {
+    color: #ced0ce;
+}
+
+#footer-section hr {
+    background-color: whitesmoke;
+}
+
+.lower-row {
+    margin-top: 40px;
+}
+
+#footer-section .footer-icons {
+    font-size: 20px;
+}
+
+#footer-section .footer-icons a {
+    color: #909090;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#footer-section .footer-icons a:hover {
+    color: whitesmoke;
+}
+
+#footer-section .copyright h4 {
+    color: #ced0ce;
+}
+
+/* End Footer */
+
+
+
+
+
+
+
+/* Media */
+@media screen and (max-width: 768px) {
+    .banner-center h1 {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .banner-center h1 {
+        font-size: 50px;
+    }
+
+    .white-btn,
+    .navy-btn {
+        font-size: 20px;
+        margin: 0px 10px;
+        border-radius: 20px;
+        padding: 10px 20px;
+    }
+
+    #project-section .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item-1 {
+        order: 1;
+    }
+
+    .item-2 {
+        order: 2;
+    }
+
+    .item-3 {
+        order: 4;
+    }
+
+    .item-4 {
+        order: 3;
+    }
+
+    .item-5 {
+        order: 5;
+    }
+
+    .item-6 {
+        order: 6;
+    }
+}
